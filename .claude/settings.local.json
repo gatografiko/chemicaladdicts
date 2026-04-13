@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:empuje.net)",
+      "WebFetch(domain:www.nosdiario.gal)"
+    ]
+  }
+}

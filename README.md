@@ -1,46 +1,71 @@
-# Astro Starter Kit: Basics
+# Chemical Addicts — Sitio Web Oficial
 
-```sh
-npm create astro@latest -- --template basics
-```
+Sitio web oficial de **Chemical Addicts**, banda de punk de Lugo, Galicia.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Tecnologías
 
-## 🚀 Project Structure
+- [Astro](https://astro.build/) `v6.1.5` — framework web
+- [Tailwind CSS](https://tailwindcss.com/) `v4.2.2` — estilos utilitarios (via `@tailwindcss/vite`)
+- Google Fonts — Bebas Neue + Oswald + Inter
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del proyecto
 
 ```text
-/
+chemicals/
 ├── public/
+│   ├── favicon.ico
 │   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro       # Layout base (meta, fuentes, lang="es")
+│   ├── pages/
+│   │   └── index.astro        # Página principal — todas las secciones
+│   └── styles/
+│       └── global.css         # Tailwind + animaciones globales (glitch, marquee, scanlines)
+├── astro.config.mjs
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Desarrollo local
 
-## 🧞 Commands
+```bash
+npm install
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+El servidor arranca en `http://localhost:4321`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Comandos disponibles
 
-## 👀 Want to learn more?
+| Comando               | Acción                                      |
+| --------------------- | ------------------------------------------- |
+| `npm run dev`         | Servidor de desarrollo con hot-reload       |
+| `npm run build`       | Build de producción en `./dist/`            |
+| `npm run preview`     | Preview del build de producción             |
+| `npm run astro ...`   | CLI de Astro (`astro add`, `astro check`…)  |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Secciones del sitio
+
+- **Hero** — Título con efecto glitch animado, grid decorativo y spotlight rojo
+- **La Banda** — Bio + tarjeta de premios Muralleando 2025
+- **Miembros** — Areny (voz), Manu (guitarra), Rubén (bajo), Tabo (batería)
+- **Directos** — Historial y próximos conciertos
+- **Ticker** — Banda animada con logros de la banda
+- **Contacto** — Links a redes sociales + formulario
+
+## La Banda
+
+Chemical Addicts son una banda de punk de Lugo, Galicia. Ganadores en el festival **Muralleando 2025**:
+
+- Mejor Banda de Versiones
+- Mejor Canción Original
+- Mejor Álbum
+
+| Red       | Enlace                                                        |
+| --------- | ------------------------------------------------------------- |
+| Instagram | [@chemicaladdicts](https://www.instagram.com/chemicaladdicts) |
+| Facebook  | [chemical.addicts](https://www.facebook.com/chemical.addicts) |
+
+## Requisitos
+
+- Node.js `>=22.12.0`

@@ -69,3 +69,4 @@ Chemical Addicts son una banda de punk de Lugo, Galicia. Ganadores en el festiva
 ## Requisitos
 
 - Node.js `>=22.12.0`
+a

@@ -1,11 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Chemical Addicts — Punk desde Lugo">
   <!-- NAV -->
-  <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4 bg-black/80 backdrop-blur-sm border-b border-red-900/30">
-    <a href="#inicio" class="font-bebas text-2xl tracking-widest text-white hover:text-red-600 transition-colors">
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4
+    bg-black/80 backdrop-blur-sm border-b border-red-900/30"
+  >
+    <a
+      href="#inicio"
+      class="font-bebas text-2xl tracking-widest text-white hover:text-red-600 transition-colors"
+    >
       CHEMICAL <span class="text-red-600">ADDICTS</span>
     </a>
     <div class="hidden md:flex gap-8">
@@ -14,7 +20,11 @@ import Layout from '../layouts/Layout.astro';
       <a href="#directos" class="nav-link text-sm uppercase">Directos</a>
       <a href="#contacto" class="nav-link text-sm uppercase">Contacto</a>
     </div>
-    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menú">
+    <button
+      id="menu-btn"
+      class="md:hidden flex flex-col gap-1.5 p-2"
+      aria-label="Menú"
+    >
       <span class="w-6 h-0.5 bg-white block"></span>
       <span class="w-6 h-0.5 bg-red-600 block"></span>
       <span class="w-4 h-0.5 bg-white block"></span>
@@ -22,50 +32,111 @@ import Layout from '../layouts/Layout.astro';
   </nav>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 bg-black/95 flex flex-col items-center justify-center gap-10 hidden">
-    <a href="#sobre" class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors">La Banda</a>
-    <a href="#miembros" class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors">Miembros</a>
-    <a href="#directos" class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors">Directos</a>
-    <a href="#contacto" class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors">Contacto</a>
+  <div
+    id="mobile-menu"
+    class="fixed inset-0 z-40 bg-black/95 flex-col items-center justify-center gap-10 hidden"
+  >
+    <a
+      href="#sobre"
+      class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors"
+      >La Banda</a
+    >
+    <a
+      href="#miembros"
+      class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors"
+      >Miembros</a
+    >
+    <a
+      href="#directos"
+      class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors"
+      >Directos</a
+    >
+    <a
+      href="#contacto"
+      class="mobile-nav-link font-oswald text-3xl uppercase tracking-widest text-white hover:text-red-600 transition-colors"
+      >Contacto</a
+    >
   </div>
 
   <!-- HERO -->
-  <section id="inicio" class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden scanlines">
-    <div class="absolute inset-0" style="background-image: linear-gradient(rgba(204,0,0,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(204,0,0,0.07) 1px, transparent 1px); background-size: 60px 60px;"></div>
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full"
-         style="background: radial-gradient(circle, rgba(204,0,0,0.15) 0%, transparent 70%);"></div>
+  <section
+    id="inicio"
+    class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden scanlines"
+  >
+    <div
+      class="absolute inset-0"
+      style="background-image: linear-gradient(rgba(204,0,0,0.07) 1px, transparent 1px), linear-gradient(90deg,
+      rgba(204,0,0,0.07) 1px, transparent 1px); background-size: 60px 60px;"
+    >
+    </div>
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 rounded-full"
+      style="background: radial-gradient(circle, rgba(204,0,0,0.15) 0%, transparent 70%);"
+    >
+    </div>
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <div class="absolute -top-20 -right-20 w-96 h-96 border-r-2 border-t-2 border-red-800/20 rotate-12"></div>
-      <div class="absolute -bottom-20 -left-20 w-96 h-96 border-l-2 border-b-2 border-red-800/20 rotate-12"></div>
+      <div
+        class="absolute -top-20 -right-20 w-96 h-96 border-r-2 border-t-2 border-red-800/20 rotate-12"
+      >
+      </div>
+      <div
+        class="absolute -bottom-20 -left-20 w-96 h-96 border-l-2 border-b-2 border-red-800/20 rotate-12"
+      >
+      </div>
     </div>
 
     <div class="relative z-10 text-center px-6">
-      <div class="inline-block mb-6 px-4 py-1 border border-red-600/60 text-red-500 font-oswald text-sm uppercase tracking-widest">
+      <div
+        class="inline-block mb-6 px-4 py-1 border border-red-600/60 text-red-500 font-oswald text-sm uppercase tracking-widest"
+      >
         Punk · Lugo · Galicia
       </div>
-      <h1 class="font-bebas leading-none mb-4" style="font-size: clamp(5rem, 18vw, 16rem);">
-        <span class="glitch-wrapper text-white" data-text="CHEMICAL">CHEMICAL</span>
+      <h1
+        class="font-bebas leading-none mb-4"
+        style="font-size: clamp(5rem, 18vw, 16rem);"
+      >
+        <span class="glitch-wrapper text-white" data-text="CHEMICAL"
+          >CHEMICAL</span
+        >
       </h1>
-      <h1 class="font-bebas leading-none mb-8" style="font-size: clamp(5rem, 18vw, 16rem);">
-        <span class="glitch-wrapper text-red-600 red-glow" data-text="ADDICTS">ADDICTS</span>
+      <h1
+        class="font-bebas leading-none mb-8"
+        style="font-size: clamp(5rem, 18vw, 16rem);"
+      >
+        <span class="glitch-wrapper text-red-600 red-glow" data-text="ADDICTS"
+          >ADDICTS</span
+        >
       </h1>
-      <p class="font-oswald text-gray-400 text-lg md:text-xl uppercase tracking-widest mb-12 max-w-lg mx-auto">
+      <p
+        class="font-oswald text-gray-400 text-lg md:text-xl uppercase tracking-widest mb-12 max-w-lg mx-auto"
+      >
         Ruido. Adrenalina. Verdad.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#directos" class="punk-border inline-block px-8 py-3 font-oswald uppercase tracking-widest text-white bg-red-700 hover:bg-red-600 transition-colors text-lg">
+        <a
+          href="#directos"
+          class="punk-border inline-block px-8 py-3 font-oswald uppercase tracking-widest text-white
+           bg-red-700 hover:bg-red-600 transition-colors text-lg"
+        >
           Próximos Directos
         </a>
-        <a href="https://www.instagram.com/chemicaladdicts" target="_blank" rel="noopener"
-           class="inline-block px-8 py-3 font-oswald uppercase tracking-widest text-white border border-white/20 hover:border-red-600 hover:text-red-500 transition-all text-lg">
+        <a
+          href="https://www.instagram.com/chemicaladdicts"
+          target="_blank"
+          rel="noopener"
+          class="inline-block px-8 py-3 font-oswald uppercase tracking-widest text-white border border-white/20
+           hover:border-red-600 hover:text-red-500 transition-all text-lg"
+        >
           Instagram
         </a>
       </div>
     </div>
 
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600">
+    <div
+      class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-600"
+    >
       <span class="font-oswald text-xs uppercase tracking-widest">Scroll</span>
-      <div class="w-px h-12 bg-gradient-to-b from-gray-600 to-transparent"></div>
+      <div class="w-px h-12 bg-linear-to-b from-gray-600 to-transparent"></div>
     </div>
   </section>
 
@@ -73,31 +144,52 @@ import Layout from '../layouts/Layout.astro';
   <section id="sobre" class="py-24 px-6 md:px-16 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-16 items-center">
       <div>
-        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm">Quiénes somos</span>
+        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm"
+          >Quiénes somos</span
+        >
         <div class="section-divider"></div>
-        <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
-          ADICTOS AL<br/><span class="text-red-600">RUIDO</span>
+        <h2
+          class="font-bebas text-6xl md:text-7xl text-white leading-none mb-6"
+        >
+          ADICTOS AL<br /><span class="text-red-600">RUIDO</span>
         </h2>
         <p class="text-gray-400 leading-relaxed mb-4">
-          Chemical Addicts somos una banda de punk surgida en las calles de Lugo. Cuatro tíos con mucho que decir y poco tiempo para callarse. Nuestra música bebe de influencias diversas pero siempre con la energía y la rabia del punk más directo.
+          Chemical Addicts es una banda de punk surgida en las calles de Lugo.
+          Tres tíos y una tía con mucho que decir y poco tiempo para callarse.
+          Nuestra música bebe de influencias diversas pero siempre con la
+          energía y la rabia del punk más directo.
         </p>
         <p class="text-gray-400 leading-relaxed mb-8">
-          Llevamos el sonido de Lugo por escenarios de Galicia, mezclando versiones brutales con canciones propias que no te van a dejar indiferente.
+          Llevamos el sonido de Lugo por escenarios de Galicia, mezclando
+          versiones brutales con canciones propias que no te van a dejar
+          indiferente.
         </p>
         <div class="flex gap-6">
           <div class="text-center">
             <div class="font-bebas text-5xl text-red-600">3</div>
-            <div class="font-oswald text-xs uppercase tracking-widest text-gray-500">Premios</div>
+            <div
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500"
+            >
+              Premios
+            </div>
           </div>
           <div class="w-px bg-red-900/40"></div>
           <div class="text-center">
             <div class="font-bebas text-5xl text-red-600">4</div>
-            <div class="font-oswald text-xs uppercase tracking-widest text-gray-500">Miembros</div>
+            <div
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500"
+            >
+              Miembros
+            </div>
           </div>
           <div class="w-px bg-red-900/40"></div>
           <div class="text-center">
-            <div class="font-bebas text-5xl text-red-600">LGO</div>
-            <div class="font-oswald text-xs uppercase tracking-widest text-gray-500">Galicia</div>
+            <div class="font-bebas text-5xl text-red-600">LUGO</div>
+            <div
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500"
+            >
+              Galicia
+            </div>
           </div>
         </div>
       </div>
@@ -107,59 +199,114 @@ import Layout from '../layouts/Layout.astro';
           <div class="flex items-start gap-4 mb-6">
             <div class="text-4xl">🏆</div>
             <div>
-              <h3 class="font-bebas text-2xl text-white tracking-wide">Muralleando 2025</h3>
-              <p class="text-red-600 font-oswald text-sm uppercase tracking-widest">Festival de Lugo</p>
+              <h3 class="font-bebas text-2xl text-white tracking-wide">
+                Muralleando 2025
+              </h3>
+              <p
+                class="text-red-600 font-oswald text-sm uppercase tracking-widest"
+              >
+                Festival de Lugo
+              </p>
             </div>
           </div>
           <div class="space-y-3">
-            <div class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600">
+            <div
+              class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600"
+            >
               <span class="text-yellow-500">★</span>
-              <span class="font-oswald text-sm uppercase tracking-wide text-gray-300">Mejor Banda de Versiones</span>
+              <span
+                class="font-oswald text-sm uppercase tracking-wide text-gray-300"
+                >Mejor Banda de Versiones</span
+              >
             </div>
-            <div class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600">
+            <div
+              class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600"
+            >
               <span class="text-yellow-500">★</span>
-              <span class="font-oswald text-sm uppercase tracking-wide text-gray-300">Mejor Canción Original</span>
+              <span
+                class="font-oswald text-sm uppercase tracking-wide text-gray-300"
+                >Mejor Canción Original</span
+              >
             </div>
-            <div class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600">
+            <div
+              class="flex items-center gap-3 p-3 bg-black/40 border-l-2 border-red-600"
+            >
               <span class="text-yellow-500">★</span>
-              <span class="font-oswald text-sm uppercase tracking-wide text-gray-300">Mejor Álbum</span>
+              <span
+                class="font-oswald text-sm uppercase tracking-wide text-gray-300"
+                >Mejor Álbum</span
+              >
             </div>
           </div>
         </div>
-        <div class="absolute -bottom-3 -right-3 w-full h-full border border-red-700/30 -z-10"></div>
+        <div
+          class="absolute -bottom-3 -right-3 w-full h-full border border-red-700/30 -z-10"
+        >
+        </div>
       </div>
     </div>
   </section>
 
   <!-- MEMBERS -->
-  <section id="miembros" class="py-24 bg-zinc-950/60 border-t border-b border-red-900/20">
+  <section
+    id="miembros"
+    class="py-24 bg-zinc-950/60 border-t border-b border-red-900/20"
+  >
     <div class="px-6 md:px-16 max-w-6xl mx-auto">
       <div class="text-center mb-16">
-        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm">Los que hacen el ruido</span>
+        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm"
+          >Los que hacen el ruido</span
+        >
         <div class="section-divider mx-auto"></div>
-        <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none">LA BANDA</h2>
+        <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none">
+          LA BANDA
+        </h2>
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-        {[
-          { initial: 'A', name: 'Areny', role: 'Voz', ig: 'areny_music' },
-          { initial: 'M', name: 'Manu', role: 'Guitarra', ig: 'manu_chemical' },
-          { initial: 'R', name: 'Rubén', role: 'Bajo', ig: 'ruben_reval' },
-          { initial: 'T', name: 'Tabo', role: 'Batería', ig: 'tabo_taborat' },
-        ].map(({ initial, name, role, ig }) => (
-          <div class="group relative bg-zinc-900 border border-zinc-800 hover:border-red-700/60 transition-all duration-300 p-6 text-center">
-            <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-red-950/40 border-2 border-red-800/50 flex items-center justify-center group-hover:border-red-600 transition-colors">
-              <span class="font-bebas text-3xl text-red-500">{initial}</span>
+        {
+          [
+            { initial: "A", name: "Areny", role: "Voz", ig: "areny_music" },
+            {
+              initial: "M",
+              name: "Manu",
+              role: "Guitarra",
+              ig: "manu_chemical",
+            },
+            { initial: "R", name: "Rubén", role: "Bajo", ig: "ruben_reval" },
+            { initial: "T", name: "Tabo", role: "Batería", ig: "tabo_taborat" },
+          ].map(({ initial, name, role, ig }) => (
+            <div
+              class="group relative bg-zinc-900 border border-zinc-800 hover:border-red-700/60 
+            transition-all duration-300 p-6 text-center"
+            >
+              <div
+                class="w-20 h-20 mx-auto mb-4 rounded-full bg-red-950/40 border-2 border-red-800/50 
+              flex items-center justify-center group-hover:border-red-600 transition-colors"
+              >
+                <span class="font-bebas text-3xl text-red-500">{initial}</span>
+              </div>
+              <h3 class="font-bebas text-2xl text-white tracking-wide mb-1">
+                {name}
+              </h3>
+              <p class="font-oswald text-red-600 text-xs uppercase tracking-widest mb-3">
+                {role}
+              </p>
+              <a
+                href={`https://www.instagram.com/${ig}`}
+                target="_blank"
+                rel="noopener"
+                class="text-gray-600 hover:text-red-500 font-oswald text-xs uppercase tracking-wide transition-colors"
+              >
+                @{ig}
+              </a>
+              <div
+                class="absolute inset-x-0 bottom-0 h-0.5 bg-red-600 scale-x-0 group-hover:scale-x-100 
+              transition-transform duration-300"
+              />
             </div>
-            <h3 class="font-bebas text-2xl text-white tracking-wide mb-1">{name}</h3>
-            <p class="font-oswald text-red-600 text-xs uppercase tracking-widest mb-3">{role}</p>
-            <a href={`https://www.instagram.com/${ig}`} target="_blank" rel="noopener"
-               class="text-gray-600 hover:text-red-500 font-oswald text-xs uppercase tracking-wide transition-colors">
-              @{ig}
-            </a>
-            <div class="absolute inset-x-0 bottom-0 h-0.5 bg-red-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-          </div>
-        ))}
+          ))
+        }
       </div>
     </div>
   </section>
@@ -167,81 +314,152 @@ import Layout from '../layouts/Layout.astro';
   <!-- GIGS -->
   <section id="directos" class="py-24 px-6 md:px-16 max-w-6xl mx-auto">
     <div class="mb-16">
-      <span class="font-oswald text-red-600 uppercase tracking-widest text-sm">En vivo</span>
+      <span class="font-oswald text-red-600 uppercase tracking-widest text-sm"
+        >En vivo</span
+      >
       <div class="section-divider"></div>
-      <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none">PRÓXIMOS<br/><span class="text-red-600">DIRECTOS</span></h2>
+      <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none">
+        PRÓXIMOS<br /><span class="text-red-600">DIRECTOS</span>
+      </h2>
     </div>
 
     <div class="space-y-4">
-      <div class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all duration-300">
+      <div
+        class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border
+         border-zinc-800 hover:border-red-700/50 transition-all duration-300"
+      >
         <div class="flex items-center gap-6 mb-4 md:mb-0">
           <div class="text-center min-w-14">
             <div class="font-bebas text-3xl text-red-600 leading-none">—</div>
-            <div class="font-oswald text-xs text-gray-600 uppercase">Próximo</div>
+            <div class="font-oswald text-xs text-gray-600 uppercase">
+              Próximo
+            </div>
           </div>
           <div class="w-px h-10 bg-zinc-700"></div>
           <div>
-            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">Concierto por anunciar</h3>
-            <p class="font-oswald text-sm text-gray-500 uppercase tracking-wide">Lugo, Galicia</p>
+            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">
+              Concierto por anunciar
+            </h3>
+            <p
+              class="font-oswald text-sm text-gray-500 uppercase tracking-wide"
+            >
+              Lugo, Galicia
+            </p>
           </div>
         </div>
-        <a href="https://www.instagram.com/chemicaladdicts" target="_blank" rel="noopener"
-           class="font-oswald text-sm uppercase tracking-widest text-red-600 border border-red-800/40 px-4 py-2 hover:bg-red-700 hover:text-white hover:border-red-700 transition-all self-start md:self-auto">
+        <a
+          href="https://www.instagram.com/chemicaladdicts"
+          target="_blank"
+          rel="noopener"
+          class="font-oswald text-sm uppercase tracking-widest text-red-600 border border-red-800/40 px-4 py-2
+           hover:bg-red-700 hover:text-white hover:border-red-700 transition-all self-start md:self-auto"
+        >
           Seguir en IG →
         </a>
       </div>
 
-      <div class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all duration-300">
+      <div
+        class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border
+         border-zinc-800 hover:border-red-700/50 transition-all duration-300"
+      >
         <div class="flex items-center gap-6 mb-4 md:mb-0">
           <div class="text-center min-w-14">
-            <div class="font-bebas text-3xl text-red-600 leading-none">2025</div>
-            <div class="font-oswald text-xs text-gray-600 uppercase">Recolleita</div>
+            <div class="font-bebas text-3xl text-red-600 leading-none">
+              2025
+            </div>
+            <div class="font-oswald text-xs text-gray-600 uppercase">
+              Recolleita
+            </div>
           </div>
           <div class="w-px h-10 bg-zinc-700"></div>
           <div>
-            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">Recolleita 2025</h3>
-            <p class="font-oswald text-sm text-gray-500 uppercase tracking-wide">Club Clavicémbalo · Lugo</p>
+            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">
+              Recolleita 2025
+            </h3>
+            <p
+              class="font-oswald text-sm text-gray-500 uppercase tracking-wide"
+            >
+              Club Clavicémbalo · Lugo
+            </p>
           </div>
         </div>
-        <span class="font-oswald text-sm uppercase tracking-widest text-gray-600 self-start md:self-auto">Completado</span>
+        <span
+          class="font-oswald text-sm uppercase tracking-widest text-gray-600 self-start md:self-auto"
+          >Completado</span
+        >
       </div>
 
-      <div class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all duration-300">
+      <div
+        class="group flex flex-col md:flex-row md:items-center justify-between p-6 bg-zinc-900 border
+         border-zinc-800 hover:border-red-700/50 transition-all duration-300"
+      >
         <div class="flex items-center gap-6 mb-4 md:mb-0">
           <div class="text-center min-w-14">
-            <div class="font-bebas text-3xl text-red-600 leading-none">2025</div>
-            <div class="font-oswald text-xs text-gray-600 uppercase">Solidario</div>
+            <div class="font-bebas text-3xl text-red-600 leading-none">
+              2026
+            </div>
+            <div class="font-oswald text-xs text-gray-600 uppercase">
+              Solidario
+            </div>
           </div>
           <div class="w-px h-10 bg-zinc-700"></div>
           <div>
-            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">Día Mundial del Parkinson</h3>
-            <p class="font-oswald text-sm text-gray-500 uppercase tracking-wide">Con Lorahacepam · Lugo</p>
+            <h3 class="font-oswald text-lg text-white uppercase tracking-wide">
+              Día Mundial del Parkinson
+            </h3>
+            <p
+              class="font-oswald text-sm text-gray-500 uppercase tracking-wide"
+            >
+              Con Lorahacepam · Lugo
+            </p>
           </div>
         </div>
-        <span class="font-oswald text-sm uppercase tracking-widest text-gray-600 self-start md:self-auto">Completado</span>
+        <span
+          class="font-oswald text-sm uppercase tracking-widest text-gray-600 self-start md:self-auto"
+          >Completado</span
+        >
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
   <div class="bg-red-700 py-3 overflow-hidden border-t border-b border-red-600">
-    <div class="flex gap-12 items-center whitespace-nowrap" style="animation: marquee 20s linear infinite; display: flex; width: max-content;">
-      {Array(2).fill(null).map(() => (
-        <div class="flex gap-12 items-center">
-          <span class="font-bebas text-2xl tracking-widest text-white">CHEMICAL ADDICTS</span>
-          <span class="text-red-300">✦</span>
-          <span class="font-bebas text-2xl tracking-widest text-white">PUNK DESDE LUGO</span>
-          <span class="text-red-300">✦</span>
-          <span class="font-bebas text-2xl tracking-widest text-white">MURALLEANDO 2025</span>
-          <span class="text-red-300">✦</span>
-          <span class="font-bebas text-2xl tracking-widest text-white">MEJOR CANCIÓN ORIGINAL</span>
-          <span class="text-red-300">✦</span>
-          <span class="font-bebas text-2xl tracking-widest text-white">MEJOR ÁLBUM</span>
-          <span class="text-red-300">✦</span>
-          <span class="font-bebas text-2xl tracking-widest text-white">MEJOR BANDA DE VERSIONES</span>
-          <span class="text-red-300">✦</span>
-        </div>
-      ))}
+    <div
+      class="flex gap-12 items-center whitespace-nowrap"
+      style="animation: marquee 20s linear infinite; display: flex; width: max-content;"
+    >
+      {
+        Array(2)
+          .fill(null)
+          .map(() => (
+            <div class="flex gap-12 items-center">
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                CHEMICAL ADDICTS
+              </span>
+              <span class="text-red-300">✦</span>
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                PUNK DESDE LUGO
+              </span>
+              <span class="text-red-300">✦</span>
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                MURALLEANDO 2025
+              </span>
+              <span class="text-red-300">✦</span>
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                MEJOR CANCIÓN ORIGINAL
+              </span>
+              <span class="text-red-300">✦</span>
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                MEJOR ÁLBUM
+              </span>
+              <span class="text-red-300">✦</span>
+              <span class="font-bebas text-2xl tracking-widest text-white">
+                MEJOR BANDA DE VERSIONES
+              </span>
+              <span class="text-red-300">✦</span>
+            </div>
+          ))
+      }
     </div>
   </div>
 
@@ -249,66 +467,147 @@ import Layout from '../layouts/Layout.astro';
   <section id="contacto" class="py-24 px-6 md:px-16 max-w-6xl mx-auto">
     <div class="grid md:grid-cols-2 gap-16 items-start">
       <div>
-        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm">Síguenos y contacta</span>
+        <span class="font-oswald text-red-600 uppercase tracking-widest text-sm"
+          >Síguenos y contacta</span
+        >
         <div class="section-divider"></div>
-        <h2 class="font-bebas text-6xl md:text-7xl text-white leading-none mb-6">
-          ÚNETE AL<br/><span class="text-red-600">CAOS</span>
+        <h2
+          class="font-bebas text-6xl md:text-7xl text-white leading-none mb-6"
+        >
+          ÚNETE AL<br /><span class="text-red-600">CAOS</span>
         </h2>
         <p class="text-gray-400 leading-relaxed mb-8">
-          Para contrataciones, colaboraciones o simplemente para decirnos que os mola, buscadnos en redes o escribidnos directamente.
+          Para contrataciones, colaboraciones o simplemente para decirnos que os
+          mola, buscadnos en redes o escribidnos directamente.
         </p>
 
         <div class="flex flex-col gap-3">
-          <a href="https://www.instagram.com/chemicaladdicts" target="_blank" rel="noopener"
-             class="flex items-center gap-4 p-4 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all group">
-            <div class="w-10 h-10 bg-red-950/40 border border-red-800/40 flex items-center justify-center group-hover:bg-red-700/30 transition-colors">
-              <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          <a
+            href="https://www.instagram.com/chemicaladdicts"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center gap-4 p-4 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all group"
+          >
+            <div
+              class="w-10 h-10 bg-red-950/40 border border-red-800/40 flex items-center justify-center
+               group-hover:bg-red-700/30 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-red-500"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 
+                  1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 
+                  0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 
+                  1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 
+                  7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259
+                   0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 
+                   0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 
+                   12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                ></path>
               </svg>
             </div>
             <div>
-              <div class="font-oswald text-white uppercase tracking-wide text-sm">Instagram</div>
-              <div class="font-oswald text-gray-500 text-xs">@chemicaladdicts</div>
+              <div
+                class="font-oswald text-white uppercase tracking-wide text-sm"
+              >
+                Instagram
+              </div>
+              <div class="font-oswald text-gray-500 text-xs">
+                @chemicaladdicts
+              </div>
             </div>
-            <span class="ml-auto text-red-600 group-hover:translate-x-1 transition-transform">→</span>
+            <span
+              class="ml-auto text-red-600 group-hover:translate-x-1 transition-transform"
+              >→</span
+            >
           </a>
 
-          <a href="https://www.facebook.com/chemical.addicts" target="_blank" rel="noopener"
-             class="flex items-center gap-4 p-4 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all group">
-            <div class="w-10 h-10 bg-red-950/40 border border-red-800/40 flex items-center justify-center group-hover:bg-red-700/30 transition-colors">
-              <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          <a
+            href="https://www.facebook.com/chemical.addicts"
+            target="_blank"
+            rel="noopener"
+            class="flex items-center gap-4 p-4 bg-zinc-900 border border-zinc-800 hover:border-red-700/50 transition-all group"
+          >
+            <div
+              class="w-10 h-10 bg-red-950/40 border border-red-800/40 flex items-center justify-center group-hover:bg-red-700/30 transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-red-500"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 
+                  1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
               </svg>
             </div>
             <div>
-              <div class="font-oswald text-white uppercase tracking-wide text-sm">Facebook</div>
-              <div class="font-oswald text-gray-500 text-xs">chemical.addicts</div>
+              <div
+                class="font-oswald text-white uppercase tracking-wide text-sm"
+              >
+                Facebook
+              </div>
+              <div class="font-oswald text-gray-500 text-xs">
+                chemical.addicts
+              </div>
             </div>
-            <span class="ml-auto text-red-600 group-hover:translate-x-1 transition-transform">→</span>
+            <span
+              class="ml-auto text-red-600 group-hover:translate-x-1 transition-transform"
+              >→</span
+            >
           </a>
         </div>
       </div>
 
       <div class="bg-zinc-900 border border-zinc-800 p-8">
-        <h3 class="font-bebas text-3xl text-white mb-6 tracking-wide">Escríbenos</h3>
+        <h3 class="font-bebas text-3xl text-white mb-6 tracking-wide">
+          Escríbenos
+        </h3>
         <form class="flex flex-col gap-4" onsubmit="return false;">
           <div>
-            <label class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2">Nombre</label>
-            <input type="text" placeholder="Tu nombre"
-              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald text-sm outline-none transition-colors placeholder-zinc-700"/>
+            <label
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2"
+              >Nombre</label
+            >
+            <input
+              type="text"
+              placeholder="Tu nombre"
+              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald
+              text-sm outline-none transition-colors placeholder-zinc-700"
+            />
           </div>
           <div>
-            <label class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2">Email</label>
-            <input type="email" placeholder="tu@email.com"
-              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald text-sm outline-none transition-colors placeholder-zinc-700"/>
+            <label
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              placeholder="tu@email.com"
+              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald
+              text-sm outline-none transition-colors placeholder-zinc-700"
+            />
           </div>
           <div>
-            <label class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2">Mensaje</label>
-            <textarea rows="4" placeholder="¿En qué podemos ayudarte?"
-              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald text-sm outline-none transition-colors placeholder-zinc-700 resize-none"></textarea>
+            <label
+              class="font-oswald text-xs uppercase tracking-widest text-gray-500 block mb-2"
+              >Mensaje</label
+            >
+            <textarea
+              rows="4"
+              placeholder="¿En qué podemos ayudarte?"
+              class="w-full bg-black border border-zinc-800 focus:border-red-700 px-4 py-3 text-white font-oswald
+              text-sm outline-none transition-colors placeholder-zinc-700 resize-none"
+            ></textarea>
           </div>
-          <button type="submit"
-            class="punk-border bg-red-700 hover:bg-red-600 text-white font-oswald uppercase tracking-widest py-3 transition-all text-sm">
+          <button
+            type="submit"
+            class="punk-border bg-red-700 hover:bg-red-600 text-white font-oswald uppercase tracking-widest py-3 transition-all text-sm"
+          >
             Enviar Mensaje
           </button>
         </form>
@@ -318,14 +617,22 @@ import Layout from '../layouts/Layout.astro';
 
   <!-- FOOTER -->
   <footer class="border-t border-red-900/30 py-10 px-6 md:px-16 bg-zinc-950">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+    >
       <div class="text-center md:text-left">
         <div class="font-bebas text-3xl text-white tracking-widest mb-1">
           CHEMICAL <span class="text-red-600">ADDICTS</span>
         </div>
-        <div class="font-oswald text-xs uppercase tracking-widest text-gray-600">Punk · Lugo · Galicia</div>
+        <div
+          class="font-oswald text-xs uppercase tracking-widest text-gray-600"
+        >
+          Punk · Lugo · Galicia
+        </div>
       </div>
-      <div class="font-oswald text-xs uppercase tracking-widest text-gray-700 text-center">
+      <div
+        class="font-oswald text-xs uppercase tracking-widest text-gray-700 text-center"
+      >
         © 2025 Chemical Addicts · Todos los derechos reservados
       </div>
     </div>
@@ -334,16 +641,20 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
   }
 </style>
 
 <script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-  document.querySelectorAll('.mobile-nav-link').forEach(link => {
-    link.addEventListener('click', () => menu?.classList.add('hidden'));
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn?.addEventListener("click", () => menu?.classList.toggle("hidden"));
+  document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+    link.addEventListener("click", () => menu?.classList.add("hidden"));
   });
 </script>

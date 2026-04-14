@@ -27,4 +27,4 @@ pnpm-debug.log*
 .vscode/
 
 # Windows-specific files
-Thumbs.db
+Thumbs.dbo

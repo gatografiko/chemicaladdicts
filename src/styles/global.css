@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
 @theme {
-  --color-punk-red: #cc0000;
-  --color-punk-red-dark: #990000;
+  --color-punk-green: #4fa632;
+  --color-punk-green-dark: #367a22;
   --color-punk-yellow: #f5c518;
   --color-punk-bg: #0a0a0a;
   --color-punk-surface: #111111;
@@ -44,10 +44,10 @@ body::before {
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #111; }
-::-webkit-scrollbar-thumb { background: #cc0000; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #4fa632; border-radius: 3px; }
 
 /* Text selection */
-::selection { background: #cc0000; color: #fff; }
+::selection { background: #4fa632; color: #fff; }
 
 .font-bebas { font-family: 'Bebas Neue', sans-serif; }
 .font-oswald { font-family: 'Oswald', sans-serif; }
@@ -88,12 +88,12 @@ body::before {
 }
 
 .glitch-wrapper::before {
-  color: #cc0000;
+  color: #4fa632;
   animation: glitch 3s infinite;
 }
 
 .glitch-wrapper::after {
-  color: #00ccff;
+  color: #fff673;
   animation: glitch2 3s infinite 0.1s;
 }
 
@@ -124,12 +124,12 @@ body::before {
 
 /* Punk border */
 .punk-border {
-  border: 2px solid #cc0000;
-  box-shadow: 4px 4px 0 #cc0000;
+  border: 2px solid #4fa632;
+  box-shadow: 4px 4px 0 #4fa632;
 }
 
 .punk-border:hover {
-  box-shadow: 6px 6px 0 #cc0000;
+  box-shadow: 6px 6px 0 #4fa632;
   transform: translate(-2px, -2px);
   transition: all 0.15s ease;
 }
@@ -144,9 +144,14 @@ body::before {
   animation: fadeInUp 0.6s ease forwards;
 }
 
-/* Red glow */
+/* Green glow */
 .red-glow {
-  text-shadow: 0 0 20px rgba(204, 0, 0, 0.8), 0 0 40px rgba(204, 0, 0, 0.4);
+  text-shadow: 0 0 20px rgba(79, 166, 50, 0.8), 0 0 40px rgba(79, 166, 50, 0.4);
+}
+
+/* Yellow glow */
+.yellow-glow {
+  text-shadow: 0 0 20px rgba(255, 246, 115, 0.8), 0 0 40px rgba(255, 246, 115, 0.4);
 }
 
 /* Nav link underline animation */
@@ -166,17 +171,17 @@ body::before {
   left: 0;
   width: 0;
   height: 2px;
-  background: #cc0000;
+  background: #4fa632;
   transition: width 0.3s ease;
 }
 
-.nav-link:hover { color: #cc0000; }
+.nav-link:hover { color: #4fa632; }
 .nav-link:hover::after { width: 100%; }
 
 /* Section divider */
 .section-divider {
   width: 60px;
   height: 4px;
-  background: #cc0000;
+  background: #4fa632;
   margin: 1rem 0 2rem 0;
 }

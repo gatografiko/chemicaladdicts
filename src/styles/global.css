@@ -154,6 +154,41 @@ body::before {
   text-shadow: 0 0 20px rgba(255, 246, 115, 0.8), 0 0 40px rgba(255, 246, 115, 0.4);
 }
 
+/* SVG Glitch */
+.svg-glitch {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  line-height: 0;
+  width: clamp(300px, 92vw, 1200px);
+}
+
+.svg-glitch > div {
+  line-height: 0;
+  display: block;
+}
+
+.svg-glitch svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.svg-glitch-a,
+.svg-glitch-b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.svg-glitch-a { animation: glitch 3s infinite; }
+.svg-glitch-b { animation: glitch2 3s infinite 0.1s; }
+
+.svg-glow-yellow { filter: drop-shadow(0 0 14px rgba(255,246,115,0.7)) drop-shadow(0 0 30px rgba(255,246,115,0.3)); }
+.svg-glow-green  { filter: drop-shadow(0 0 14px rgba(79,166,50,0.7))  drop-shadow(0 0 30px rgba(79,166,50,0.3)); }
+
 /* Nav link underline animation */
 .nav-link {
   position: relative;
